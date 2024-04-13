@@ -1,0 +1,11 @@
+0x11. What happens when you type google.com in your browser and press Enter
+The first step of a computer system decoding instructions from human readable instructions is by use of underlying set mechanisms, in our case we will have to translate “google.com” into an IP address using DNS Server. The DNS server looks out for locally cached IP to “google.com”, if not cached a look up is initiated and this process returns the IP address that associated with “google.com”.
+Once the IP address to the google server is known, a TCP(Transmission Control Protocol) connection is established to exchange packets of confirmation between the browser used and the server identified, in a three-way handshake.
+In our case, the presence of a firewall calls for inspection of incoming and outgoing traffic between the browser and the google server. The purpose of the firewall is to allow or block traffic and enforce adherence to set security policies.
+Secure HTTPS(Hypertext Transfer Protocol Secure) data transmission protocols, SSL(Secure Sockets Layer) or TLS(Transport Layer Security) protocols are deployed to encrypt data being exchanged between the browser and the google server, over the established connection.
+Due to adverse nature of high usage of google server, load balancing is a likely deployed mechanism to distribute the load from several quires over multiple number of google servers. The load balancers are configure, but no limited to set profiling of the traffic, user or location.
+On our customer journey, we are on the request side yet. The google web server has received the HTTPS request and processed it, fetching the goggle homepage and in return it’s a HTTPs response. 
+In case our request was to perform specific tasks or generate dynamic content, an application server is required to execute scripts and applications. Server side processing will prompt the web server to communicate with the required application server.
+The application server dictates the stipulated packaging of the response. Application server will query a database server if the content requested was a search result to stored data.
+The database server will return the retrieved data to the application server for further processing.
+
